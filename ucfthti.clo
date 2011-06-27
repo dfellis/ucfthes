@@ -129,8 +129,8 @@
 \newcommand\@makecopyrightpage{
    \ColumnSave
    \pagenumbering{roman}
-   \setcounter{page}{0}
-   \thispagestyle{empty}
+   \setcounter{page}{2}
+   %\thispagestyle{empty}
    \null
    \vfill
    \if@copyright
@@ -266,8 +266,8 @@
   {
     \centering
     \pdfbookmark[0]{ACKNOWLEDGMENTS}{Acknowledgments}       % Sets a PDF bookmark for the ACKS. (UCF: to add pdf bookmark)
-\vspace*{45pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
-    \textsc{\large Acknowledgments}
+%\vspace*{45pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
+    \textbf{\large ACKNOWLEDGMENTS} %UCF requires all titles to be FULLCAPS (David Ellis Jan2011)
     \vskip 0pt
   }
 }
@@ -493,14 +493,14 @@
    \if@abstract
       \ColumnSave
       \par\pagestyle{plain}
-              \vspace*{30pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
-           \pagenumbering{roman}
-           \setcounter{page}{3}
+              %\vspace*{30pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
+           %\pagenumbering{roman}
+           %\setcounter{page}{3}
 	
         \begin{center}
-	\pdfbookmark[0]{Abstract}{abstract}       % Sets a PDF bookmark for the abstract. (UCF: to add pdf bookmark)
+	\pdfbookmark[0]{ABSTRACT}{abstract}       % Sets a PDF bookmark for the abstract. (UCF: to add pdf bookmark)
 %        \textbf{\@titlesize Abstract}\\[12pt]
-        \textsc{\large Abstract}
+        \textbf{\large ABSTRACT} %UCF Requires all titles to be FULLCAPS (David Ellis Jan2011)
         \end{center}
 
 %      \begin{center}
@@ -574,8 +574,14 @@
   \@makeacknowledgments
 
 %\topmargin 1.15in
-  \pdfbookmark[0]{TABLE OF CONTENTS}{table of contents} % Sets a PDF bookmark for the TOC (UCF)
-  \tableofcontents
+%  \pdfbookmark[0]{TABLE OF CONTENTS}{table of contents} % Sets a PDF bookmark for the TOC (UCF)
+%  \tableofcontents
+% David Ellis - Jan 2011
+% Change to make the TOC page number in the PDF bookmarks match the actual first page of TOC
+% Based on and simplified code found here: http://tex.stackexchange.com/questions/8427/creating-a-pdf-bookmark-that-goes-straight-to-a-section-heading-not-above-or-bel#8433
+  \makeatletter
+  {\tableofcontents\Hy@writebookmark{Table of Contents}{TABLE OF CONTENTS}{\@currentHref}{0}{toc}}
+  \makeatother
 
   \listoffigures
 

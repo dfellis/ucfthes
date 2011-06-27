@@ -12,13 +12,13 @@ Dissertation writing process:
    
 2. If not using a LaTeX IDE such as Kile or TexMaker, the manual compilation
    process is as follows:
-```   
+
+
      pdflatex paper
 
      bibtex paper
 
      pdflatex paper
-```
    
 Included below is the original README from the author who did the majority of
 the legwork.
