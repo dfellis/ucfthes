@@ -1,7 +1,7 @@
 UCF Thesis and Dissertation of LaTeX 2e (v. 3.0)
 ================================================
 
-David Ellis, dfellis@mail.ucf.edu
+David Ellis, David.Ellis@ucf.edu
 ------------------------------------------------
 
 Dissertation writing process:
@@ -30,8 +30,8 @@ the legwork.
 UCF Thesis and Dissertation on LATEX 2e (v. 3.0)
 ================================================
 
-Ivan garibay, igaribay@mail.ucf.edu
------------------------------------
+Ivan garibay, igaribay@ucf.edu
+------------------------------------------------
 
 ### Important
 
