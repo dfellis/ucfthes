@@ -14,7 +14,9 @@ Dissertation writing process:
    process is as follows:
 ```   
      pdflatex paper
+
      bibtex paper
+
      pdflatex paper
 ```
    
