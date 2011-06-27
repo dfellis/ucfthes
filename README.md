@@ -1,4 +1,4 @@
-UCF Thesis and Dissertation of LaTeX 2e (v. 3.0)
+UCF Thesis and Dissertation of LaTeX 2e (v. 3.x)
 ================================================
 
 David Ellis, David.Ellis@ucf.edu
