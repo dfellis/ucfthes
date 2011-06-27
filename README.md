@@ -6,7 +6,7 @@ David Ellis, David.Ellis@ucf.edu
 
 Dissertation writing process:
 
-1. Provided is an example dissertation (paper.tex) that breaks each chapter into
+1. Provided is an example dissertation (``paper.tex``) that breaks each chapter into
    separate files (essentially an early outline of my own dissertation). Modify
    as necessary.
    
@@ -17,12 +17,6 @@ Dissertation writing process:
     bibtex paper
     pdflatex paper
    
-3. Assuming you use the provided \UCFchapter, \UCFsection, and \UCFsubsection
-   commands in place of \chapter, \section, and \subsection, respectively, and
-   you do not modify the definiton of the hyperref package options (excluding
-   pdfauthor, pdftitle, pdfsubject, and pdfkeywords), the output PDF should
-   conform to UCF dissertation standards.
-
 Included below is the original README from the author who did the majority of
 the legwork.
 
