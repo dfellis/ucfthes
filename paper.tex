@@ -1,0 +1,148 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% UCF thesis Dissertation Formatting on Latex 2e
+% Sample paper.tex file.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\documentclass [PhD] {ucfthes}
+%\documentclass [PhD,single,twoside] {ucfthes}
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%\documentclass[12pt,leqno,openright]{book}
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\bibliographystyle {thesis}
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%\bibliographystyle {agsm}
+%\usepackage{harvard}
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%\usepackage{epsfig}
+%\usepackage{rotating}
+%\usepackage{oldlfont}
+%\usepackage{latexsym}
+%\usepackage{tableau}
+%%%%%%%%%%%%%%%\usepackage{draftnote}
+%\input{newsection}
+%\input{macros}
+%\input{schartmac}
+%\input{trmacros}
+%\input {mymacros}                        
+%mathematical macros
+%\input{macros/macros}
+%\input{macros/ALSSmacros}
+\usepackage{amssymb} 	% Need this for the hat!
+%\usepackage{amsmath,amssymb,amsfonts} 	% Typical math packages
+%\usepackage{graphics}			% To include graphs
+\usepackage{epsfig}
+%\usepackage{psfrag}
+
+%\usepackage[ps2pdf,bookmarks=true,breaklinks=true]{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%I.G. Feb,2005
+%This is to produce the PDF links to be comply with UCF 
+%PDF rules.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[dvipdfm, breaklinks=true]{hyperref}
+\hypersetup{
+ pdfauthor = {Your Name Here},
+ pdftitle = {Title of Your Work Here},
+ pdfsubject = {Phd Dissertation, Fall 2008, Univ. of Central Florida},
+ pdfkeywords = {keyword1, keyword2, etc.},
+ pdfcreator = {LaTeX with hyperref package},
+ pdfdisplaydoctitle = true,
+ bookmarksnumbered = true,
+ pdfborder = {0 0 0},
+ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% other options not used, but tried ;(
+% bookmarksopen = true,
+% bookmarksopenlevel = 4,
+%colorlinks = false,
+% naturalnames = true
+% colorlinks = false,
+% pdfproducer = {dvips + ps2pdf}
+% citebordercolor=none,
+% linkbordercolor=none,
+% menubordercolor={1 1 1},
+% filebordercolor={1 1 1},
+% urlbordercolor={1 1 1},
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRELIMINARY PAGES, ACKNOWLEDGMENTS, AND ABSTRACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%                          PRELIMINARY PAGES                           %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title          {Your Title Here:\\
+		Subtitle Here (if you have one)}
+
+\author         {Your Name}
+
+\prevdegreei 	{B.S. Ricardo Palma University, 1994}
+\prevdegreeii 	{Professional Degree of Electronics Engineer, 1995}
+
+\department	{Computer Science}
+\school         {Computer Science}
+\college	{Engineering and Computer Science}
+\term		{Fall}
+% Note:  degreeyear should be optional, but as of  5-Feb-96
+% it seems required or you get a year of ``2''.   -johnh
+\degreeyear     {2008}
+
+\professor	{Your Advisor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chair          {Here your advisor name}
+\member         {Here professor member name}
+\member         {Here another member name}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\dedication     {\textsl{To my parents, etc., etc}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\acknowledgments {Here acks if any :) }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\abstract{Here your abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% START DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin {document}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\makeintropages
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHAPTERS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{INTRODUCTION}
+Your text and citations~\cite{wu:gpem02}.
+
+\chapter{BACKGROUND}
+
+\chapter{ANALISIS}
+
+\chapter{CONCLUSIONS}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% APPENDIX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+
+\chapter{ADDITIONAL FIGURES}
+
+\bibliography{Dissertation}    % bibliography references
+
+\end {document}
