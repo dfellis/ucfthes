@@ -27,12 +27,12 @@
 
 \newif\if@department
 \newcommand{\department}[1]{\def\@department{#1}\@departmenttrue}
-%\newcommand{\nodepartment}{\@departmentfalse}
+\newcommand{\nodepartment}{\@departmentfalse}
 %\department{NO DEPARTMENT!?!}
 
 \newif\if@school
 \newcommand{\school}[1]{\def\@school{#1}\@schooltrue}
-%\newcommand{\noschool}{\@schoolfalse}
+\newcommand{\noschool}{\@schoolfalse}
 %\school{NO SCHOOL!?!}
 
 % UCF: I. Garibay 3.14.00

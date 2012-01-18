@@ -89,7 +89,7 @@
          \vskip 24pt plus0pt minus6pt
          A \@thesisname \hspace{1pt} submitted in partial fulfillment of the requirements\\
          for the degree of \@degreename \\
-         %\if@department\ in the Department of \@department \fi\\
+         \if@department\ in the Department of \@department \fi\\
          \if@school\ in the School of \@school \fi\\
          in the College of \@college \\
          at the University of Central Florida \\
