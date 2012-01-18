@@ -508,20 +508,31 @@
    {LIST OF FIGURES}{LIST OF FIGURES}}\addcontentsline{toc}{frontmatter}{LIST OF FIGURES}\@starttoc{lof}\fi}
 
 
-\def\l@figure#1#2{\pagebreak[3]
-   \vskip 1.0em plus 1pt  % space above chapter line
-   \@tempdima 2.3em       % width of box holding chapter number
-   \begingroup
-     %\parindent \z@ \rightskip \@pnumwidth
-    \parindent 1.5em \rightskip \@pnumwidth
-     \parfillskip -\@pnumwidth
-     \bfseries                  % Boldface.
-     \leavevmode          % TeX command to enter horizontal mode.
-    	   #1  \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
-     \hbox to\@pnumwidth{\hfil #2}\par
-   \endgroup}
+%\def\l@figure#1#2{\pagebreak[3]
+%   \vskip 1.0em plus 1pt  % space above chapter line
+%   \@tempdima 2.3em       % width of box holding chapter number
+%   \begingroup
+%     %\parindent \z@ \rightskip \@pnumwidth
+%    \parindent 1.5em \rightskip \@pnumwidth
+%     \parfillskip -\@pnumwidth
+%     \bfseries                  % Boldface.
+%     \leavevmode          % TeX command to enter horizontal mode.
+%    	   #1  \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
+%     \hbox to\@pnumwidth{\hfil #2}\par
+%   \endgroup}
 
 %\def\l@figure{\@dottedtocline{1}{1.5em}{2.3em}}
+
+% Jan 2012 DFE: Stripped the List of Figure entry command of useless cruft, and
+% removed the parindent value to guarantee a correct indent level (namely, none)
+\def\l@figure#1#2{
+   \parindent 0em
+   \@tempdima 2.3em
+   \begingroup
+      \bfseries
+         #1 \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
+      \hbox to\@pnumwidth{\hfil #2}\par
+   \endgroup}
 
 % LIST OF TABLES
 %
