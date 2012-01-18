@@ -17,20 +17,28 @@ Test Equations \ref{firstEqnArray} to \ref{lastEqnArray} referenced here.
 
 \subsection{Example Subsection\label{SubsecExample}}
 
-Test Table \ref{testTbl} referenced here.
+Test Table \ref{testTbl} and \ref{testTbl2} referenced here.
 
 \begin{ucftable}{|c||c|c|c|}{This is my table!}{testTbl}\hline
 	& A & B & C \\ \hline \hline
   D	& 1 & 2 & 3 \\ \hline
   E	& 4 & 5 & 6 \\ \hline
   F	& 7 & 8 & 9 \\ \hline
-\end{ucftable} 
+\end{ucftable}
+
+\begin{ucftable}{|c|c|c|c|}{This is a second test table}{testTbl2}\hline
+$\alpha$ & $\beta$ & $\gamma$ & $\delta$ \\ \hline \hline
+1        & 2       & 3        & 4 \\ \hline
+5        & 6       & 7        & 8 \\ \hline
+\end{ucftable}
 
 \subsubsection{Example Subsubsection}
 
-Test Figure \ref{testFig} referenced here.
+Test Figure \ref{testFig} and \ref{testFig2} referenced here.
 
 \ucffigure{images/RVSfig.pdf}{width=4in}{This is my test figure.}{testFig}
+
+\ucffigure{images/RVSfig.pdf}{width=2in,height=6in}{This is a second test figure.}{testFig2}
 
 Test Footnote\footnote{This is the footnote} placed here.
 
