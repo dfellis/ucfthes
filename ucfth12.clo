@@ -80,7 +80,7 @@
 }
 \newcommand\scriptsize{\@setfontsize\scriptsize\@viiipt{9.5}}
 \newcommand\tiny{\@setfontsize\tiny\@vipt\@viipt}
-\newcommand\large{\@setfontsize\large\@xivpt{18}}
+\newcommand\large{\@setfontsize\large{14pt}\@xivpt}
 \newcommand\Large{\@setfontsize\Large\@xviipt{22}}
 \newcommand\LARGE{\@setfontsize\LARGE\@xxpt{25}}
 \newcommand\huge{\@setfontsize\huge\@xxvpt{30}}
