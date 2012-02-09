@@ -80,7 +80,7 @@
 % \enducftable}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newenvironment{ucftable}[3]{
-  \begin{table}
+  \begin{table}[!hp]
     \caption{#2\label{#3}}
     \begin{center}
       \begin{tabular}{#1}
@@ -96,7 +96,7 @@
 % \ucffigure{path/to/image.pdf}{width=Xin}{Caption Text Here}{LabelRefHere}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\ucffigure}[4]{
-  \begin{figure}
+  \begin{figure}[!hp]
     \centering
     \includegraphics[#2]{#1}
     \caption{#3\label{#4}}
