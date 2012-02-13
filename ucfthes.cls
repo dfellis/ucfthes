@@ -529,6 +529,11 @@
       \hbox to\@pnumwidth{\hfil #2}\par
    \endgroup}
 
+% Remove extra vertical space inserted between figures from different chapters,
+% as now required by new editor. Taken from: http://tex.stackexchange.com/questions/784/how-to-change-the-line-spacing-in-my-list-of-figures
+\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+\addtocontents{lof}{\protect\noaddvspace}
+
 % LIST OF TABLES
 %
 % IG: UCF requires the list of tables to appear in the list of contents
@@ -548,6 +553,8 @@
       \hbox to\@pnumwidth{\hfil #2}\par
    \endgroup}
 
+% Same removal of extra vertical space for the same reason as above for list of tables
+\addtocontents{lot}{\protect\noaddvspace}
 
 %    ****************************************
 %    *             BIBLIOGRAPHY             *
