@@ -103,7 +103,7 @@
 
          \vskip 24pt plus0pt minus6pt
 
-         {\normalsize Major Professor: \\ \@professor }
+         {\normalsize Major Professor: \@professor }
 
 
       \end {center}
