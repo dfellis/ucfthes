@@ -433,7 +433,7 @@
    \@tempdima 3em         % width of box holding part number, used by
      \parindent \z@ \rightskip \@pnumwidth             %% \numberline
      \parfillskip -\@pnumwidth
-     {\large \bfseries          % set line in \large boldface
+     {\large           % set line in \large
      \leavevmode          % TeX command to enter horizontal mode.
      #1\hfil \hbox to\@pnumwidth{\hss #2}}\par
      \nobreak             % Never break after part entry
@@ -445,7 +445,6 @@
    \begingroup
      \parindent \z@ \rightskip \@pnumwidth
      \parfillskip -\@pnumwidth
-     \bfseries                  % Boldface.
      \leavevmode          % TeX command to enter horizontal mode.
      #1\leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
      \hbox to\@pnumwidth{\hfil #2}\par
@@ -459,7 +458,6 @@
    \begingroup
      \parindent \z@ \rightskip \@pnumwidth
      \parfillskip -\@pnumwidth
-     \bfseries                  % Boldface.
      \leavevmode          % TeX command to enter horizontal mode.
     	   #1  \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
      \hbox to\@pnumwidth{\hfil #2}\par
@@ -472,7 +470,6 @@
      %\parindent \z@ \rightskip \@pnumwidth
     \parindent 1.5em \rightskip \@pnumwidth
      \parfillskip -\@pnumwidth
-     \bfseries                  % Boldface.
      \leavevmode          % TeX command to enter horizontal mode.
     	   #1  \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
      \hbox to\@pnumwidth{\hfil #2}\par
@@ -485,7 +482,6 @@
      %\parindent \z@ \rightskip \@pnumwidth
     \parindent 3.8em \rightskip \@pnumwidth
      \parfillskip -\@pnumwidth
-     \bfseries                  % Boldface.
      \leavevmode          % TeX command to enter horizontal mode.
     	   #1  \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
      \hbox to\@pnumwidth{\hfil #2}\par
@@ -529,8 +525,7 @@
    \parindent 0em
    \@tempdima 2.3em
    \begingroup
-      \bfseries
-         #1 \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
+         Figure #1 \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
       \hbox to\@pnumwidth{\hfil #2}\par
    \endgroup}
 
@@ -544,7 +539,14 @@
   \if@tables\chapter*{LIST OF TABLES\markboth
    {LIST OF TABLES}{LIST OF TABLES}}\addcontentsline{toc}{frontmatter}{LIST OF TABLES}\@starttoc{lot}\fi}
 
-\let\l@table\l@figure
+%\let\l@table\l@figure
+\def\l@table#1#2{
+   \parindent 0em
+   \@tempdima 2.3em
+   \begingroup
+   	Table #1 \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
+      \hbox to\@pnumwidth{\hfil #2}\par
+   \endgroup}
 
 
 %    ****************************************
