@@ -175,7 +175,7 @@
 %  ****************************************
 %
 \parskip 4pt plus 1pt              % Extra vertical space between paragraphs.
-\parindent 1.5em                   % Width of paragraph indentation.
+\parindent 0.5in                   % Width of paragraph indentation.
 \topsep 10pt plus 4pt minus 6pt    % Extra vertical space, in addition to
                                    % \parskip, added above and below list and
                                    % paragraphing environments.
