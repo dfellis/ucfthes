@@ -254,7 +254,7 @@
     % UCF changed their mind and now require appendices to look essentially the same as chapters
     % Commenting the code out instead of removing in case they change their mind again
     %\ifthenelse{\equal{\@chapapp}{\@chapappA}}{ %Normal chapter
-      %\vspace*{0.125in}                     % Space at top of text page. (UCF:to add up to 2-inches)
+      \vspace*{0.6875in}                     % Space at top of text page. (UCF:to add up to 2-inches) (Magic number. Comment it out and margin is 1in)
       \ifnum \c@secnumdepth >\m@ne     % IF secnumdepth > -1 THEN
 	\centering \large\bfseries \@chapapp{} \thechapter % Print 'CHAPTER' and number.
 	\par
@@ -284,7 +284,7 @@
 %
 
 \def\@makeschapterhead#1{            % Heading for \chapter* command
-    %\vspace*{35pt}                  % Space at top of page. (UCF:to add up to 2-inches)
+    \vspace*{0.6875in}                  % Space at top of page. (UCF:to add up to 2-inches)
   \par\renewcommand\baselinestretch{1}\@normalsize %UCF requires titles to be single-spaced DEllis Jan2011)
   { \parindent 0pt \raggedright
     \centering \large \bfseries       % Title.
