@@ -251,7 +251,9 @@
 \def\@makechapterhead#1{             % Heading for \chapter command
   \par\renewcommand\baselinestretch{1}\@normalsize %UCF requires titles to be single-spaced DEllis Jan2011)
   { \parindent 0pt \raggedright
-    \ifthenelse{\equal{\@chapapp}{\@chapappA}}{ %Normal chapter
+    % UCF changed their mind and now require appendices to look essentially the same as chapters
+    % Commenting the code out instead of removing in case they change their mind again
+    %\ifthenelse{\equal{\@chapapp}{\@chapappA}}{ %Normal chapter
       %\vspace*{0.125in}                     % Space at top of text page. (UCF:to add up to 2-inches)
       \ifnum \c@secnumdepth >\m@ne     % IF secnumdepth > -1 THEN
 	\centering \large\bfseries \@chapapp{} \thechapter % Print 'CHAPTER' and number.
@@ -262,18 +264,18 @@
       #1\par
       \nobreak                         % TeX penalty to prevent page break.
       \vskip 20pt                      % Space between title and text.
-    }{ %UCF requires Appendix titles to be a separate page. DEllis Jan2011
-      \null\vfill
-      \ifnum \c@secnumdepth >\m@ne
-	\centering \large\bfseries \@chapapp{} \thechapter
-	\par
-	%\vskip -5pt
-      \fi
-      \centering \large\bfseries
-      #1\par
-      \vfill
-      \pagebreak
-    }
+    %}{ %UCF requires Appendix titles to be a separate page. DEllis Jan2011
+    %  \null\vfill
+    %  \ifnum \c@secnumdepth >\m@ne
+    %	\centering \large\bfseries \@chapapp{} \thechapter
+    %	\par
+    %	%\vskip -5pt
+    %  \fi
+    %  \centering \large\bfseries
+    %  #1\par
+    %  \vfill
+    %  \pagebreak
+    %}
   }
   \renewcommand\baselinestretch{\@spacing}\@normalsize %Restores specified spacing (should be double) DEllis2011
 }
@@ -418,11 +420,11 @@
   \def\@chapapp{APPENDIX}
   \def\thechapter{\Alph{chapter}}
   %Redefine \chapter as mentioned
-  \def\chapter{\clearpage      % Starts new page.
-   \thispagestyle{plain}     % Page style of chapter page is 'plain'
-   \global\@topnum\z@        % Prevents figures from going at top of page.
-   \@afterindentfalse        % Suppress indent in first paragraph.
-   \secdef\@chapterA\@schapter}   % Change to \@afterindenttrue to indent.
+  %\def\chapter{\clearpage      % Starts new page.
+  % \thispagestyle{plain}     % Page style of chapter page is 'plain'
+  % \global\@topnum\z@        % Prevents figures from going at top of page.
+  % \@afterindentfalse        % Suppress indent in first paragraph.
+  % \secdef\@chapterA\@schapter}   % Change to \@afterindenttrue to indent.
 }
 
 
