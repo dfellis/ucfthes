@@ -420,11 +420,11 @@
   \def\@chapapp{APPENDIX}
   \def\thechapter{\Alph{chapter}}
   %Redefine \chapter as mentioned
-  %\def\chapter{\clearpage      % Starts new page.
-  % \thispagestyle{plain}     % Page style of chapter page is 'plain'
-  % \global\@topnum\z@        % Prevents figures from going at top of page.
-  % \@afterindentfalse        % Suppress indent in first paragraph.
-  % \secdef\@chapterA\@schapter}   % Change to \@afterindenttrue to indent.
+  \def\chapter{\clearpage      % Starts new page.
+   \thispagestyle{plain}     % Page style of chapter page is 'plain'
+   \global\@topnum\z@        % Prevents figures from going at top of page.
+   \@afterindentfalse        % Suppress indent in first paragraph.
+   \secdef\@chapterA\@schapter}   % Change to \@afterindenttrue to indent.
 }
 
 
