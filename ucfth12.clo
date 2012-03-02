@@ -328,8 +328,8 @@
         APPENDIX \numberline{\thechapter}#1}\else
       \addcontentsline{toc}{chapter}{#1}\fi
    \chaptermark{#1}
-   \addtocontents{lof}{\protect\addvspace{10pt}} % Adds between-chapter space
-   \addtocontents{lot}{\protect\addvspace{10pt}} % to lists of figs & tables.
+   %\addtocontents{lof}{\protect\addvspace{10pt}} % Adds between-chapter space
+   %\addtocontents{lot}{\protect\addvspace{10pt}} % to lists of figs & tables.
     \@makechapterhead{#2}
     \@afterheading}                 % Routine called after chapter and
                                     % section heading.
