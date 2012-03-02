@@ -272,7 +272,7 @@
   {
     \centering
     \pdfbookmark[0]{ACKNOWLEDGMENTS}{Acknowledgments}       % Sets a PDF bookmark for the ACKS. (UCF: to add pdf bookmark)
-\vspace*{0.6875in}                     % Space at top of text page. (UCF:to add up to 2-inches)
+\vspace*{0.5in}                     % Space at top of text page. (UCF:to add up to 2-inches)
     \textbf{\large ACKNOWLEDGMENTS} %UCF requires all titles to be FULLCAPS (David Ellis Jan2011)
     \vskip 0pt
   }
@@ -499,7 +499,7 @@
    \if@abstract
       \ColumnSave
       \par\pagestyle{plain}
-              \vspace*{0.6875in}                     % Space at top of text page. (UCF:to add up to 2-inches)
+              \vspace*{0.3125in}                     % Space at top of text page. (UCF:to add up to 2-inches)
            %\pagenumbering{roman}
            %\setcounter{page}{3}
 	
