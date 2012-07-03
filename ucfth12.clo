@@ -252,7 +252,7 @@
   \par\renewcommand\baselinestretch{1}\@normalsize %UCF requires titles to be single-spaced DEllis Jan2011)
   { \parindent 0pt \raggedright
     \ifthenelse{\equal{\@chapapp}{\@chapappA}}{ %Normal chapter
-      %\vspace*{0.6875in}                     % Space at top of text page. (UCF:to add up to 2-inches) (Magic number from trial-and-error)
+      \vspace*{0.6875in}                     % Space at top of text page. (UCF:to add up to 2-inches) (Magic number from trial-and-error)
       \ifnum \c@secnumdepth >\m@ne     % IF secnumdepth > -1 THEN
 	\centering \large\bfseries \@chapapp{} \thechapter % Print 'CHAPTER' and number.
 	\par
@@ -263,7 +263,7 @@
       \nobreak                         % TeX penalty to prevent page break.
       \vskip 20pt                      % Space between title and text.
     }{ %UCF requires Appendix titles to be a separate page. DEllis Jan2011
-      \null\vfill
+      \vspace*{0.6875in}
       \ifnum \c@secnumdepth >\m@ne
 	\centering \large\bfseries \@chapapp{} \thechapter
 	\par
