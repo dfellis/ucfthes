@@ -145,7 +145,7 @@
          %\ifx\@copyrightyear\@degreeyear\else , \@degreeyear \fi
          %\ by \@author \\
          %\@copyrightinfo
-         \normalsize \normalfont \copyright\  \@copyrightyear \hspace{1pt} by
+         \normalsize \normalfont \copyright\  \@copyrightyear \hspace{1pt} %by
          \@author \\
       \end{center}
    \fi
