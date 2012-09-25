@@ -424,6 +424,23 @@
    \@afterindentfalse        % Suppress indent in first paragraph.
    \secdef\@chapterA\@schapter}   % Change to \@afterindenttrue to indent.
 }
+% SINGLE APPENDIX
+%
+% The \singleappendix command does everything the \appendix
+% command does, but does not count the appendices. A hack
+% for a single appendix.
+\def\singleappendix{\par
+    \setcounter{chapter}{0}
+    \setcounter{section}{0}
+    \def\@chapapp{APPENDIX}
+    \def\thechapter{}
+    %Redefine \chapter
+    \def\chapter{\clearpage
+      \thispagestyle{plain}
+      \global\@topnum\z@
+      \@afterindentfalse
+      \secdef\@chapterA\@schapter}
+}
 
 
 %    ****************************************
